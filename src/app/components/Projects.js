@@ -22,7 +22,7 @@ function Projects() {
 			id: 1,
 			title: "To-Do List",
 			description:
-				"The beginning of my programming journey. Putting together the fundamentals of javascript and react through a traditional to-do list project, incorporating state management.",
+				"The beginning of my programming journey. Putting together the fundamentals of Javascript and React through a traditional to-do list project, incorporating state management.",
 			link: "https://github.com/imrn16/todo-test-3",
 			link_name: `Source Code`,
 			old_tech: [],
@@ -44,7 +44,7 @@ function Projects() {
 			id: 3,
 			title: "Budgets",
 			description:
-				"Budgeting app that allows the user to add multiple budgets with multiple expenses within each budget. Controlled via modals. Implemented CRUD (Create, Read, Update, Delete) using React Contexts, multiple components with prop drilling, and local storage.  ",
+				"Budgeting app that allows the user to add multiple budgets with multiple expenses within each budget. Controlled via modals. Implemented CRUD (Create, Read, Update, Delete) using React Contexts, multiple components with prop drilling, and local storage.",
 			link: "https://github.com/imrn16/budget-1",
 			link_name: `Source Code`,
 			old_tech: ["HTML", "CSS", "Javascript", "React", "useState", "useEffect"],
@@ -67,9 +67,9 @@ function Projects() {
 		},
 
 		{
-			id: 4,
+			id: 5,
 			title: "Portfolio Site",
-			description: "Minimalist design philosophy used to showcase my progression throughout my development journey.",
+			description: "I designed my portfolio with a minimalist approach, using clean, simple aesthetics to clearly showcase my growth from the start of my coding journey to where I am today.",
 			link: "https://github.com/imrn16/portfolio-1",
 			link_name: `Source Code`,
 			old_tech: ["Next.js", "Tailwind CSS", "React Icons", "React", "Javascript", "HTML", "CSS", "React Hooks", "Github", "Vercel"],
