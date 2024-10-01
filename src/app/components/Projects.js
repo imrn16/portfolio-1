@@ -68,7 +68,7 @@ function Projects() {
 
 		{
 			id: 5,
-			title: "Portfolio Site",
+			title: "Portfolio",
 			description: "Designed with a minimalist approach, using clean, simple aesthetics to clearly showcase my growth from the start of my coding journey to where I am today.",
 			link: "https://github.com/imrn16/portfolio-1",
 			link_name: `Source Code`,
