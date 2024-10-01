@@ -32,9 +32,9 @@ export default function Home() {
 							<div className="flex flex-1 max-w-2xl min-w-lg pl-24">
 								<div className="flex py-20 h-screen  w-full fixed ">
 									<div className="flex flex-1 flex-col  h-auto w-full">
-										<div className="fixed top-0 w-full">
+										
 										<Title />
-										</div>
+										
 										<div className="flex flex-col mt-auto w-full">
 											<Contact />
 										</div>
