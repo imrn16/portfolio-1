@@ -13,7 +13,7 @@ function Title() {
 					<h1>MOHIUDDIN</h1>
 				</div> */}
 
-				<button className="flex flex-row  items- justify-left text-5xl tracking-tight font-bold pr-2 opacity-75 ">
+				<button className="flex flex-row  items- justify-left text-4xl tracking-tight font-bold pr-2 opacity-75 md:text-5xl ">
 					<h1> Imran Mohiuddin</h1>
 				</button>
 				<div className="flex flex-row  align-center ">
