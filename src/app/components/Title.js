@@ -21,6 +21,7 @@ function Title() {
 						<Image
 							className="rounded-full "
 							src={"/images/profile.jpg"}
+							alt="View Resume"
 							width={"32"}
 							height={"32"}
 						/>
