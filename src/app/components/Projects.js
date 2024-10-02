@@ -102,7 +102,7 @@ function Projects() {
 								</div>
 							</div>
 							<div className="flex flex-col w-3/4 pl-3">
-								<div className="flex flex-col ml-2 w-full text-lg text-slate-100">{indiv.title}</div>
+								<div className="flex flex-col ml-2 w-full text-lg text-slate-100 font-semibold">{indiv.title}</div>
 								<div className="flex flex-col w-full text-md mt-2 ml-2 text-slate-400">{indiv.description}</div>
 								<div className="flex flex-row">
 								{indiv.link && (
