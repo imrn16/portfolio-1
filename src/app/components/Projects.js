@@ -32,11 +32,12 @@ function Projects() {
 		{
 			id: 2,
 			title: "Investment Calculator",
-			description: "Simple investing app that displays the payout per year when a user inputs an initial investment, expected return rate, annual investment, and the duration of investment (in years).",
+			description:
+				"Simple investing app that displays the payout per year when a user inputs an initial investment, expected return rate, annual investment, and the duration of investment (in years).",
 			link: "https://github.com/imrn16/investment-1",
 			link_name: `Source Code`,
 			old_tech: [],
-			new_tech: ['Array Arithmetic', "HTML", "CSS", "Javascript", "React", "useState", "useEffect"],
+			new_tech: ["Array Arithmetic", "HTML", "CSS", "Javascript", "React", "useState", "useEffect"],
 			image: "/images/investments.png",
 		},
 
@@ -48,7 +49,7 @@ function Projects() {
 			link: "https://github.com/imrn16/budget-1",
 			link_name: `Source Code`,
 			old_tech: ["HTML", "CSS", "Javascript", "React", "useState", "useEffect"],
-			new_tech: ["Local Storage", "Modals", "useContext", "Multiple Components", 'Nested Arrays'],
+			new_tech: ["Local Storage", "Modals", "useContext", "Multiple Components", "Nested Arrays"],
 			image: "/images/budgets.png",
 		},
 
@@ -69,7 +70,8 @@ function Projects() {
 		{
 			id: 5,
 			title: "Portfolio",
-			description: "Designed with a minimalist approach, using clean, simple aesthetics to clearly showcase my growth from the start of my coding journey to where I am today.",
+			description:
+				"Designed with a minimalist approach, using clean, simple aesthetics to clearly showcase my growth from the start of my coding journey to where I am today.",
 			link: "https://github.com/imrn16/portfolio-1",
 			link_name: `Source Code`,
 			old_tech: ["Next.js", "Tailwind CSS", "React Icons", "React", "Javascript", "HTML", "CSS", "React Hooks", "Github", "Vercel"],
@@ -87,9 +89,9 @@ function Projects() {
 			return (
 				<>
 					<div
-						className="flex flex-1 hover:bg-slate-700 my-3 px-3 shadow-transparent rounded-3xl bg-opacity-0 bg-slate-700 hover:bg-opacity-25 hover:shadow-2xl"
+						className="flex flex-1 hover:bg-slate-700 my-3 md:px-3 shadow-transparent rounded-3xl bg-opacity-0 bg-slate-700 hover:bg-opacity-25 hover:shadow-2xl"
 						key={indiv.id}>
-						<div className="flex drop-shadow-sm w-full py-4 rounded-lg py-4 ">
+						<div className="flex drop-shadow-sm w-full rounded-lg py-4 ">
 							<div className="flex flex-row w-1/4 items-start ">
 								<div className="bg-slate-700 opacity-90 p-0.5 rounded-md w-full">
 									<Image
@@ -105,22 +107,22 @@ function Projects() {
 								<div className="flex flex-col ml-2 w-full text-lg text-slate-100 font-semibold">{indiv.title}</div>
 								<div className="flex flex-col w-full text-md mt-2 ml-2 text-slate-400">{indiv.description}</div>
 								<div className="flex flex-row">
-								{indiv.link && (
-									<button
-										className="flex flex-row mr-3 text-sm mt-2 w-auto p-1 rounded-lg hover:text-teal-300 hover:underline"
-										onClick={() => handleLink(indiv.link)}>
-										<FaLink className="justify-center align-center items-center self-center" />
-										<div className="ml-2">{indiv.link_name}</div>
-									</button>
-								)}
-								{indiv.link2 && (
-									<button
-										className="flex flex-row mr-3 text-sm mt-2 w-auto p-1 rounded-lg hover:text-teal-300 hover:underline"
-										onClick={() => handleLink(indiv.link2)}>
-										<FaLink className="justify-center align-center items-center self-center" />
-										<div className="ml-2">{indiv.link_name2}</div>
-									</button>
-								)}
+									{indiv.link && (
+										<button
+											className="flex flex-row mr-3 text-sm mt-2 w-auto p-1 rounded-lg hover:text-teal-300 hover:underline"
+											onClick={() => handleLink(indiv.link)}>
+											<FaLink className="justify-center align-center items-center self-center" />
+											<div className="ml-2">{indiv.link_name}</div>
+										</button>
+									)}
+									{indiv.link2 && (
+										<button
+											className="flex flex-row mr-3 text-sm mt-2 w-auto p-1 rounded-lg hover:text-teal-300 hover:underline"
+											onClick={() => handleLink(indiv.link2)}>
+											<FaLink className="justify-center align-center items-center self-center" />
+											<div className="ml-2">{indiv.link_name2}</div>
+										</button>
+									)}
 								</div>
 								<div className="">
 									<div className="flex flex-row text-xs flex-wrap pt-2">
@@ -155,12 +157,25 @@ function Projects() {
 	}
 
 	return (
-		<div className="flex flex-col justify-left">
-			<span className="text-xs opacity-40 ml-4">PROJECTS</span>
+		<div className="flex flex-col justify-left mb-24 ">
+			<span className="text-xs opacity-40 md:ml-4">PROJECTS</span>
 			<div>{individualProject()}</div>
 			{/* <button className="flex flex-1 w-auto mt-6 mb-32 ml-5 font-semibold hover:text-red-500">
 				<span className="">{`View Full Resumé`}</span>
 			</button> */}
+
+
+			<div className="flex flex-row w-96 justify-center items-center align-center mx-auto mt-10">
+				<div className="flex flex-row h-8 rounded-full bg-slate-800 text-xs justify-center items-center align-center opacity-80">
+					<div className="flex flex-row text-xs opacity-40 mx-4 justify-center items-center align-center ">KEY</div>
+					<div className="flex flex-row bg-teal-900 rounded-full p-1 px-3 text-teal-200  mr-2 bg-opacity-50 hover:bg-opacity-100 justify-center items-center align-center opacity-100">
+						New/Improved Skill
+					</div>
+					<div className="flex flex-row bg-stone-800 rounded-full p-1 px-3 text-stone-400  mr-2 bg-opacity-50 hover:bg-opacity-100 opacity-100">
+						Old Skill
+					</div>
+				</div>
+			</div>
 		</div>
 	);
 }
