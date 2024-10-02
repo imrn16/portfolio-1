@@ -131,7 +131,7 @@ function Projects() {
 												<>
 													<div
 														className="
-													bg-teal-900 rounded-full p-1 px-4 text-teal-200 mt-2 mr-2 bg-opacity-50 hover:bg-opacity-100">{`${ntech}`}</div>
+													bg-teal-900 rounded-full p-1 px-4 text-teal-200 mt-2 mr-2 bg-opacity-50 hover:bg-opacity-100" disabled>{`${ntech}`}</div>
 												</>
 											);
 										})}
@@ -172,7 +172,7 @@ function Projects() {
 						New/Improved Skill
 					</div>
 					<div className="flex flex-row bg-stone-800 rounded-full p-1 px-3 text-stone-400  mr-2 bg-opacity-50 hover:bg-opacity-100 opacity-100">
-						Old Skill
+						Learned Skill
 					</div>
 				</div>
 			</div>
