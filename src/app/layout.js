@@ -31,6 +31,8 @@ export default function RootLayout({ children }) {
         <meta name="twitter:title" content="Imran Mohiuddin" />
         <meta name="twitter:description" content="Full Stack Developer" />
         <meta name="twitter:image" content="/twitter-image.png" />
+        <meta property="twitter:image:alt" content="Imran Mohiuddin" />
+        <meta property="og:image:alt" content="Imran Mohiuddin" />
       </Head>
       <body
        className={`font-sf-pro bg-slate-900 subpixel-antialiased text-white`}
