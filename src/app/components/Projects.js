@@ -89,7 +89,7 @@ function Projects() {
 			return (
 				<>
 					<div
-						className="flex flex-1 md:hover:bg-slate-700 my-3 md:px-3 shadow-transparent rounded-3xl bg-opacity-0 bg-slate-700 md:hover:bg-opacity-25 md:hover:shadow-2xl"
+						className="flex flex-1 md:hover:bg-slate-700 my-3 md:px-3 shadow-transparent rounded-3xl bg-opacity-0 bg-slate-700 md:hover:bg-opacity-20 md:hover:shadow-2xl"
 						key={indiv.id}>
 						<div className="flex drop-shadow-sm w-full rounded-lg py-4 ">
 							<div className="flex flex-row w-1/4 items-start ">
