@@ -33,6 +33,12 @@ export default function RootLayout({ children }) {
         <meta name="twitter:image" content="/twitter-image.png" />
         <meta property="twitter:image:alt" content="Imran Mohiuddin" />
         <meta property="og:image:alt" content="Imran Mohiuddin" />
+        <meta property="og:image:width" content="1000" />
+        <meta property="og:image:height" content="600" />
+        <meta property="og:image:width" content="1000" />
+        <meta property="og:image:height" content="600" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="twitter:image:type" content="image/png" />
       </Head>
       <body
        className={`font-sf-pro bg-slate-900 subpixel-antialiased text-white`}
