@@ -25,9 +25,12 @@ export default function RootLayout({ children }) {
       <Head>
         <meta property="og:title" content="Imran Mohiuddin" />
         <meta property="og:description" content="Full Stack Developer" />
-        <meta property="og:image" content="/opengraph-image.png" />
+        <meta property="og:image" content="/twitter-image.png" />
         <meta property="og:url" content="https://www.imranmohiuddin.com" />
-        <meta name="twitter:card" content="/opengraph-image.png" />
+        <meta name="twitter:card" content="/twitter-image.png" />
+        <meta name="twitter:title" content="Imran Mohiuddin" />
+        <meta name="twitter:description" content="Full Stack Developer" />
+        <meta name="twitter:image" content="/twitter-image.png" />
       </Head>
       <body
        className={`font-sf-pro bg-slate-900 subpixel-antialiased text-white`}
