@@ -7,7 +7,7 @@ function Title() {
 	const router = useRouter();
 
 	function picClick() {
-		router.push(`/documents/resume.pdf`);
+		router.push(`/documents/Resume.pdf`);
 	}
 
 	return (
