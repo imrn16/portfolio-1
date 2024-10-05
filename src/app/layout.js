@@ -13,10 +13,10 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-// export const metadata = {
-//   title: "Imran Mohiuddin",
-//   description: "Full Stack Developer",
-// };
+export const metadata = {
+  title: "Imran Mohiuddin",
+  description: "Full Stack Developer",
+};
 
 export default function RootLayout({ children }) {
   return (
