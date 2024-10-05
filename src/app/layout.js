@@ -21,7 +21,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
+      <head>
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Imran Mohiuddin" />
         <meta name="twitter:description" content="Full Stack Developer" />
@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
         <meta property="og:description" content="Full Stack Developer" />
         <meta property="og:image" content="/twitter-image.jpg" />
         <meta property="og:url" content="https://www.imranmohiuddin.com" />
-      </Head>
+      </head>
       <body className={`font-sf-pro bg-slate-900 subpixel-antialiased text-white`}>
         {children}
       </body>
