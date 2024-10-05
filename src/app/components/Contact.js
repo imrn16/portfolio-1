@@ -5,6 +5,7 @@ import { BsGithub } from "react-icons/bs";
 import { IoLogoLinkedin } from "react-icons/io5";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
+import { RiArticleLine, RiArticleFill } from "react-icons/ri";
 
 function Contact() {
 	const router = useRouter();
@@ -15,6 +16,10 @@ function Contact() {
 
 	function githubLink() {
 		router.push(`https://github.com/imrn16/`);
+	}
+
+	function resumeLink() {
+		router.push(`/documents/Resume.pdf`)
 	}
 
 	return (
@@ -40,6 +45,12 @@ function Contact() {
 				opacity={"0.3"}
 				onClick={() => linkedIn()}
 			/>
+			<RiArticleFill 
+				className="flex m-2 hover:opacity-60 active:opacity-80"
+				size={`25`}
+				opacity={"0.3"}
+				onClick={() => resumeLink()}/>
+
 		</div>
 	);
 }

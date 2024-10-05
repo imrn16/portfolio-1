@@ -12,7 +12,7 @@ When I’m not coding, you’ll find me watching the latest mini-series, playing
 	return (
 		<>
 		
-		<div className="flex flex-col mt-20 mb-32 text-lg">
+		<div className="flex flex-col mt-20 mb-32 md:ml-4 text-lg">
 		<span className=" flex flex-col text-xs opacity-40 mb-4 md:hidden">ABOUT</span>
 			<span className="flex flex-col opacity-60  whitespace-pre-line leading-relaxed ">{`${aboutMe}`}</span>
 			</div>

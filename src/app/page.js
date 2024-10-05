@@ -7,6 +7,7 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import MouseGlow from "./components/MouseGlow";
 import { useEffect, useState } from "react";
+import Certifications from "./components/Certifications";
 
 export default function Home() {
 	const [isLargeScreen, setIsLargeScreen] = useState(false);
@@ -50,7 +51,9 @@ export default function Home() {
 								<div>
 									<About />
 								</div>
-
+								<div>
+											<Certifications/>
+										</div>
 								<div>
 									<Projects />
 								</div>
@@ -73,7 +76,9 @@ export default function Home() {
 										<div>
 											<About />
 										</div>
-
+										<div>
+											<Certifications/>
+										</div>
 										<div>
 											<Projects />
 										</div>

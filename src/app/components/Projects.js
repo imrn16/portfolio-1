@@ -63,7 +63,7 @@ function Projects() {
 			link_name: `Click to Visit`,
 			link_name2: `Source Code`,
 			old_tech: ["React", "Javascript", "HTML", "CSS", "React Hooks"],
-			new_tech: ["Next.js", "Tailwind CSS", "Supabase", "Supabase Auth", "React Icons", "Github", "Vercel"],
+			new_tech: ["Next.js", "Tailwind CSS", "Supabase", "Supabase Auth", "React Icons", "Github", "Vercel", "Resend"],
 			image: "/images/reddit-clone.png",
 		},
 
