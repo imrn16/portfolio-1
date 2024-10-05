@@ -1,8 +1,15 @@
 import React from "react";
 import "/src/app/globals.css";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 function Title() {
+	const router = useRouter()
+
+	function picClick() {
+		router.push(`/documents/resume.pdf`)
+	}
+
 	return (
 		<div className="flex h-auto ">
 			<div className=" w-96 h-48  justify-center items-">
@@ -17,7 +24,8 @@ function Title() {
 					<h1> Imran Mohiuddin</h1>
 				</button>
 				<div className="flex flex-row  align-center ">
-					<div className="flex my-2 items- bg-slate-900 hover:bg-opacity-100 opacity-60 rounded-full">
+					<button className="flex my-2 items- bg-slate-900 hover:opacity-100 opacity-60 rounded-full"
+					onClick={() => picClick()}>
 						<Image
 							className="rounded-full "
 							src={"/images/profile.jpg"}
@@ -25,7 +33,7 @@ function Title() {
 							width={"32"}
 							height={"32"}
 						/>
-					</div>
+					</button>
 					<div className=" ml-4 text-2xl opacity-80 mt-2 mb-1 ">Full Stack Developer</div>
 				</div>
 
