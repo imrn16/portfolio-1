@@ -24,7 +24,7 @@ function Certifications() {
 									<span className={`mx-3`}>·</span>
 									<span className={`flex flex-row opacity-60`}>{indiv.type}</span>
 								</div>
-								<span className={`flex flex-col w-full text-md mt-2 text-slate-200 opacity-50 text-md`}>{indiv.description}</span>
+								<span className={`flex flex-col w-full text-md mt-2 text-slate-200 opacity-60 text-base`}>{indiv.description}</span>
 
 								<div className="mt-2 flex flex-col h-auto rounded-3xl text-xs opacity-80 ">
 

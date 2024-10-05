@@ -8,6 +8,7 @@ import Projects from "./components/Projects";
 import MouseGlow from "./components/MouseGlow";
 import { useEffect, useState } from "react";
 import Certifications from "./components/Certifications";
+import Key from "./components/Key";
 
 export default function Home() {
 	const [isLargeScreen, setIsLargeScreen] = useState(false);
@@ -51,12 +52,16 @@ export default function Home() {
 								<div>
 									<About />
 								</div>
-								<div>
-											<Certifications/>
-										</div>
+								
 								<div>
 									<Projects />
 								</div>
+								<div>
+											<Certifications/>
+										</div>
+										<div>
+											<Key/>
+										</div>
 							</div>
 						</div>
 					</div>
@@ -76,11 +81,15 @@ export default function Home() {
 										<div>
 											<About />
 										</div>
+										
+										<div>
+											<Projects />
+										</div>
 										<div>
 											<Certifications/>
 										</div>
 										<div>
-											<Projects />
+											<Key/>
 										</div>
 									</div>
 									{/* <div className="flex flex-1 bg-orange-600 h-auto w-full">
