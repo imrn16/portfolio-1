@@ -32,26 +32,28 @@ function Contact() {
 					height={"25"}
 				/>
 			</div> */}
-
+	<button>
 			<BsGithub
 				className="flex m-2 hover:opacity-60 active:opacity-80"
 				size={`25`}
 				opacity={`0.3`}
 				onClick={() => githubLink()}
-			/>
+			/> </button>
+			<button>
 			<IoLogoLinkedin
 				className="flex m-2 hover:opacity-60 active:opacity-80"
 				size={`25`}
 				opacity={"0.3"}
 				onClick={() => linkedIn()}
-			/>
+			/> </button>
+			<button>
 			<RiArticleFill 
 				className="flex m-2 hover:opacity-60 active:opacity-80"
 				size={`25`}
 				opacity={"0.3"}
 				onClick={() => resumeLink()}/>
-
-		</div>
+</button>
+		</div> 
 	);
 }
 
