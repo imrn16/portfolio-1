@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
 				/>
 				<meta
 					property="og:image"
-					content="/twitter-image.png"
+					content="/twitter-image.jpg"
 				/>
 				<meta
 					property="og:url"
@@ -52,7 +52,7 @@ export default function RootLayout({ children }) {
 				/>
 				<meta
 					name="twitter:image"
-					content="/twitter-image.png"
+					content="/twitter-image.jpg"
 				/>
 				<meta
 					property="og:image:alt"
@@ -68,7 +68,7 @@ export default function RootLayout({ children }) {
 				/>
 				<meta
 					property="og:image:type"
-					content="image/png"
+					content="image/jpg"
 				/>
 			</Head>
 			<body
