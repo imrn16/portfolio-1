@@ -34,9 +34,8 @@ export default function Home() {
 							<div className="flex flex-1 max-w-2xl min-w-lg pl-24">
 								<div className="flex py-20 h-screen  w-full fixed ">
 									<div className="flex flex-1 flex-col  h-auto w-full">
-										
 										<Title />
-										
+
 										<div className="flex flex-col mt-auto w-full">
 											<Contact />
 										</div>
@@ -52,16 +51,16 @@ export default function Home() {
 								<div>
 									<About />
 								</div>
-								
+								<div>
+									<Certifications />
+								</div>
 								<div>
 									<Projects />
 								</div>
+								
 								<div>
-											<Certifications/>
-										</div>
-										<div>
-											<Key/>
-										</div>
+									<Key />
+								</div>
 							</div>
 						</div>
 					</div>
@@ -81,15 +80,15 @@ export default function Home() {
 										<div>
 											<About />
 										</div>
-										
+										<div>
+											<Certifications />
+										</div>
 										<div>
 											<Projects />
 										</div>
+										
 										<div>
-											<Certifications/>
-										</div>
-										<div>
-											<Key/>
+											<Key />
 										</div>
 									</div>
 									{/* <div className="flex flex-1 bg-orange-600 h-auto w-full">
@@ -97,8 +96,6 @@ export default function Home() {
 								</div> */}
 								</div>
 							</div>
-
-							
 						</div>
 					</div>
 				</>
