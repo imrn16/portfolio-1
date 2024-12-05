@@ -55,9 +55,9 @@ function Projects() {
 
 		{
 			id: 4,
-			title: "Reddit Clone",
+			title: "Paper",
 			description:
-				"My biggest challenge yet. A full-stack clone of reddit featuring authentication, votes, commenting, and much more! All integrated alongside a back-end service.",
+				"A full-stack social media site where users share content, engage in discussions, and vote on posts across a wide variety of communities. Featuring authentication, votes, commenting, and much more! All integrated alongside a back-end service.",
 			link: "https://reddit-clone-2-dh7f.vercel.app/",
 			link2: "https://github.com/imrn16/reddit-clone-2",
 			link_name: `Click to Visit`,
@@ -77,6 +77,32 @@ function Projects() {
 			old_tech: ["Next.js", "Tailwind CSS", "React Icons", "React", "Javascript", "HTML", "CSS", "React Hooks", "Github", "Vercel"],
 			new_tech: ["Animations", "Visual Effects"],
 			image: "/images/portfolio-1.png",
+		},
+
+		{
+			id: 6,
+			title: "Reddit & Youtube Playback Speed Control",
+			description:
+				"Two extensions for Google Chrome, specifically tailored to match the aesthetics of each individual website. Control the speed of videos on each site using a clean UI or keyboard shortcuts!",
+			link: "https://github.com/imrn16/portfolio-1",
+			link_name: `Source Code`,
+			old_tech: ["Tailwind CSS", "React Icons", "React", "Javascript", "HTML", "CSS", "React Hooks", "Github"],
+			new_tech: ["Google Chrome Dev Tools", "Vite", "Script Injection"],
+			image: "/images/playback-control.png",
+		},
+
+		{
+			id: 7,
+			title: "Focus: Curated Photography Equipment",
+			description:
+				"An e-commerce website built via a MERN stack, Focus is a high-end photography equipment website. Full-featured, including comments, reviews, user accounts with order history and tracking, administrator permissions with product adding/editing interface and user management, payment processing (Paypal), and much more!",
+				link: "https://focus-bice.vercel.app/",
+				link2: "https://https://github.com/imrn16/MERN-Commerce",
+				link_name: `Click to Visit`,
+				link_name2: `Source Code`,
+			old_tech: ["Tailwind CSS", "React Icons", "React", "Javascript", "HTML", "CSS", "React Hooks", "Github", "Vercel", "Vite", "MongoDB"],
+			new_tech: ["Mongoose", "Express.js", "MongoDB Atlas", "Render", "Postman", "JWT", "Toastify", "Redux", "React Carousel", "React Slick", "React PayPal", "Nodemon" ],
+			image: "/images/focus.png",
 		},
 	];
 
