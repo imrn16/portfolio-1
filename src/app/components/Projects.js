@@ -18,28 +18,29 @@ function Projects() {
 		//     new_tech: [],
 		//     image: ""
 		// },
-		{
-			id: 1,
-			title: "To-Do List",
-			description:
-				"The beginning of my programming journey. Putting together the fundamentals of Javascript and React through a traditional to-do list project, incorporating state management.",
-			link: "https://github.com/imrn16/todo-test-3",
-			link_name: `Source Code`,
-			old_tech: [],
-			new_tech: ["HTML", "CSS", "Javascript", "React", "useState", "useEffect", "Visual Studio Code"],
-			image: "/images/todo.png",
-		},
-		{
-			id: 2,
-			title: "Investment Calculator",
-			description:
-				"Simple investing app that displays the payout per year when a user inputs an initial investment, expected return rate, annual investment, and the duration of investment (in years).",
-			link: "https://github.com/imrn16/investment-1",
-			link_name: `Source Code`,
-			old_tech: [],
-			new_tech: ["Array Arithmetic", "HTML", "CSS", "Javascript", "React", "useState", "useEffect"],
-			image: "/images/investments.png",
-		},
+		
+		// {
+		// 	id: 1,
+		// 	title: "To-Do List",
+		// 	description:
+		// 		"The beginning of my programming journey. Putting together the fundamentals of Javascript and React through a traditional to-do list project, incorporating state management.",
+		// 	link: "https://github.com/imrn16/todo-test-3",
+		// 	link_name: `Source Code`,
+		// 	old_tech: [],
+		// 	new_tech: ["HTML", "CSS", "Javascript", "React", "useState", "useEffect", "Visual Studio Code"],
+		// 	image: "/images/todo.png",
+		// },
+		// {
+		// 	id: 2,
+		// 	title: "Investment Calculator",
+		// 	description:
+		// 		"Simple investing app that displays the payout per year when a user inputs an initial investment, expected return rate, annual investment, and the duration of investment (in years).",
+		// 	link: "https://github.com/imrn16/investment-1",
+		// 	link_name: `Source Code`,
+		// 	old_tech: [],
+		// 	new_tech: ["Array Arithmetic", "HTML", "CSS", "Javascript", "React", "useState", "useEffect"],
+		// 	image: "/images/investments.png",
+		// },
 
 		{
 			id: 3,

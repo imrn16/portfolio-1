@@ -3,11 +3,11 @@ import "/src/app/globals.css";
 
 function About() {
 
-	const aboutMe = `In a previous life, I earned a Master’s in Medical Sciences and worked in the healthcare industry. But as much as I valued helping others, I found myself constantly frustrated by the limitations of the electronic medical records (EMR) software I used daily. I felt stifled, unable to express my creativity or have a meaningful impact on the tools I worked with. That frustration sparked a realization—I needed a career that allowed me to build, create, and innovate.
+	const aboutMe = `I’ve always had a fascination with technology—how it works, how it connects us, and how it can improve lives. In a previous chapter of my life, I earned a Master’s in Medical Sciences and worked in the healthcare industry. While using electronic medical records (EMR) software, I often found myself imagining how these tools could be more intuitive and efficient. That curiosity and drive for improvement eventually led me to pursue a new path.
 
-So, I made a leap into the world of web development, diving deep into React, JavaScript, and other modern frameworks. Now, I focus on building applications that are as functional as they are visually appealing, with a passion for creating intuitive, seamless user experiences. Whether it’s crafting front-end interfaces or working on back-end logic, I love being able to bring creative solutions to life.
+In early 2024, I transitioned into software engineering, and for the past several months, I’ve been working professionally in the industry. I dove deep into React, JavaScript, and modern web frameworks, and I’m now focused on building applications that are not only functional but also a joy to use. I’m passionate about creating seamless, user-friendly experiences—from crafting clean front-end interfaces to designing solid back-end logic.
 
-When I’m not coding, you’ll find me watching the latest mini-series, playing my guitar, or enjoying time with family.`
+When I’m not coding, you’ll probably find me catching the latest mini-series, playing my guitar, or spending quality time with family.`
 
 	return (
 		<>
