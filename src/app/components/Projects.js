@@ -18,7 +18,7 @@ function Projects() {
 		//     new_tech: [],
 		//     image: ""
 		// },
-		
+
 		// {
 		// 	id: 1,
 		// 	title: "To-Do List",
@@ -87,8 +87,10 @@ function Projects() {
 				"Two extensions for Google Chrome, specifically tailored to match the aesthetics of each individual website. Control the speed of videos on each site using a clean UI or keyboard shortcuts!",
 				link: "https://github.com/imrn16/reddit-speed-controller",
 				link2: "https://github.com/imrn16/youtube-speed-controller",
+				link3: "https://chromewebstore.google.com/detail/reddit-playback-speed/gjilnomadofdjgeejihibknkiceonbbc",
 				link_name: `Source Code - Reddit`,
 				link_name2: `Source Code - Youtube`,
+				link_name3: `Chrome Web Store - Reddit`,
 			old_tech: ["Tailwind CSS", "React Icons", "React", "Javascript", "HTML", "CSS", "React Hooks", "Github"],
 			new_tech: ["Google Chrome Dev Tools", "Vite", "Script Injection"],
 			image: "/images/playback-control.png",
@@ -150,6 +152,14 @@ function Projects() {
 											onClick={() => handleLink(indiv.link2)}>
 											<FaLink className="justify-center align-center items-center self-center" />
 											<div className="ml-2">{indiv.link_name2}</div>
+										</button>
+									)}
+									{indiv.link3 && (
+										<button
+											className="flex flex-row mr-3 text-sm mt-2 w-auto p-1 rounded-lg hover:text-teal-300 hover:underline"
+											onClick={() => handleLink(indiv.link3)}>
+											<FaLink className="justify-center align-center items-center self-center" />
+											<div className="ml-2">{indiv.link_name3}</div>
 										</button>
 									)}
 								</div>
