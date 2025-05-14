@@ -5,7 +5,7 @@ import Title from "./components/Title";
 import Contact from "./components/Contact";
 import About from "./components/About";
 import Projects from "./components/Projects";
-import Experience from "./components/Experience"
+import Experience from "./components/Experience";
 import MouseGlow from "./components/MouseGlow";
 import { useEffect, useState } from "react";
 import Certifications from "./components/Certifications";
@@ -61,7 +61,7 @@ export default function Home() {
 								<div>
 									<Certifications />
 								</div>
-								
+
 								<div>
 									<Key />
 								</div>
@@ -85,12 +85,15 @@ export default function Home() {
 											<About />
 										</div>
 										<div>
+											<Experience />
+										</div>
+										<div>
 											<Certifications />
 										</div>
 										<div>
 											<Projects />
 										</div>
-										
+
 										<div>
 											<Key />
 										</div>
