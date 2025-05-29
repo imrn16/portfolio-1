@@ -88,9 +88,11 @@ function Projects() {
 				link: "https://github.com/imrn16/reddit-speed-controller",
 				link2: "https://github.com/imrn16/youtube-speed-controller",
 				link3: "https://chromewebstore.google.com/detail/reddit-playback-speed/gjilnomadofdjgeejihibknkiceonbbc",
+				link4: "",
 				link_name: `Source Code - Reddit`,
 				link_name2: `Source Code - Youtube`,
 				link_name3: `Chrome Web Store - Reddit`,
+				link_name4: `Chrome Web Store - Youtube`,
 			old_tech: ["Tailwind CSS", "React Icons", "React", "Javascript", "HTML", "CSS", "React Hooks", "Github"],
 			new_tech: ["Google Chrome Dev Tools", "Vite", "Script Injection"],
 			image: "/images/playback-control.png",
@@ -154,6 +156,9 @@ function Projects() {
 											<div className="ml-2">{indiv.link_name2}</div>
 										</button>
 									)}
+									
+								</div>
+								<div className="flex flex-row">
 									{indiv.link3 && (
 										<button
 											className="flex flex-row mr-3 text-sm mt-2 w-auto p-1 rounded-lg hover:text-teal-300 hover:underline"
@@ -162,7 +167,15 @@ function Projects() {
 											<div className="ml-2">{indiv.link_name3}</div>
 										</button>
 									)}
-								</div>
+									{indiv.link4 && (
+										<button
+											className="flex flex-row mr-3 text-sm mt-2 w-auto p-1 rounded-lg hover:text-teal-300 hover:underline"
+											onClick={() => handleLink(indiv.link4)}>
+											<FaLink className="justify-center align-center items-center self-center" />
+											<div className="ml-2">{indiv.link_name4}</div>
+										</button>
+									)}
+									</div>
 								<div className="">
 									<div className="flex flex-row text-xs flex-wrap pt-2">
 										{indiv.new_tech.map((ntech) => {
