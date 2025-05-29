@@ -88,7 +88,7 @@ function Projects() {
 				link: "https://github.com/imrn16/reddit-speed-controller",
 				link2: "https://github.com/imrn16/youtube-speed-controller",
 				link3: "https://chromewebstore.google.com/detail/reddit-playback-speed/gjilnomadofdjgeejihibknkiceonbbc",
-				link4: "",
+				link4: "https://chromewebstore.google.com/detail/video-speed-controller/hppfmkpiaeipejkkfcolfnlpabhgbpco",
 				link_name: `Source Code - Reddit`,
 				link_name2: `Source Code - Youtube`,
 				link_name3: `Chrome Web Store - Reddit`,
