@@ -10,23 +10,20 @@ import MouseGlow from "./components/MouseGlow";
 import { useEffect, useState } from "react";
 import Certifications from "./components/Certifications";
 import Key from "./components/Key";
+import MobileHeader from "./components/MobileHeader";
+import { useMobileHeader } from "./hooks/useMobileHeader";
 
 export default function Home() {
-	const [isLargeScreen, setIsLargeScreen] = useState(false);
-
-	useEffect(() => {
-		const handleResize = () => {
-			setIsLargeScreen(window.innerWidth > 1020);
-		};
-
-		window.addEventListener("resize", handleResize);
-		handleResize(); // Set initial value
-
-		return () => window.removeEventListener("resize", handleResize);
-	}, []);
+	const { isHeaderVisible, isLargeScreen, scrollToSection } = useMobileHeader();
 
 	return (
 		<>
+			{!isLargeScreen && (
+				<MobileHeader
+					isVisible={isHeaderVisible}
+					onNavigate={scrollToSection}
+				/>
+			)}
 			{isLargeScreen ? (
 				<>
 					<MouseGlow />
@@ -49,16 +46,16 @@ export default function Home() {
 						</div>
 						<div className="w-max h-auto flex flex-1 flex-col h-1/2 pr-10   ">
 							<div className="max-w-xl min-w-lg  overflow-scroll-y">
-								<div>
+								<div id="about">
 									<About />
 								</div>
-								<div>
+								<div id="experience">
 									<Experience />
 								</div>
-								<div>
+								<div id="projects">
 									<Projects />
 								</div>
-								<div>
+								<div id="certifications">
 									<Certifications />
 								</div>
 
@@ -74,23 +71,23 @@ export default function Home() {
 					<MouseGlow />
 					<div className="flex flex-row h-screen justify-center">
 						<div className="flex flex-1 max-w-4xl min-w-lg px-6">
-							<div className="flex py-20 h-screen  w-full  ">
+							<div className={`flex py-20 h-screen w-full transition-all duration-300 ${isHeaderVisible ? "pt-24" : ""}`}>
 								<div className="flex flex-1 flex-col  h-auto w-full">
 									<Title />
 									<div className="flex flex-col  w-full">
 										<Contact />
 									</div>
 									<div className="max-w-6xl min-w-lg  overflow-scroll-y">
-										<div>
+										<div id="about">
 											<About />
 										</div>
-										<div>
+										<div id="experience">
 											<Experience />
 										</div>
-										<div>
+										<div id="certifications">
 											<Certifications />
 										</div>
-										<div>
+										<div id="projects">
 											<Projects />
 										</div>
 
