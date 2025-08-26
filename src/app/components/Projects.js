@@ -14,6 +14,19 @@ function Projects() {
 	const [isModalOpen, setIsModalOpen] = useState(false);
 	const [sectionRef, isSectionVisible] = useScrollAnimation(0.1);
 
+	// Helper function to generate image paths for a project
+	const generateProjectImages = (projectFolder, imageCount, projectTitle, descriptions) => {
+		const images = [];
+		for (let i = 1; i <= imageCount; i++) {
+			images.push({
+				src: `/images/${projectFolder}/${i}.png`,
+				alt: `${projectTitle} - Image ${i}`,
+				description: descriptions[i - 1] || `Image ${i} of ${projectTitle}`,
+			});
+		}
+		return images;
+	};
+
 	let projectArray = [
 		// {   id: 1,
 		//     title: "Example",
@@ -70,7 +83,12 @@ function Projects() {
 			link_name2: `Source Code`,
 			old_tech: ["React Hooks", "Tailwind CSS", "Supabase Auth", "React Icons", "Github", "Vercel", "Resend"],
 			new_tech: ["React", "Next.js", "Javascript", "HTML", "CSS", "Supabase"],
-			image: "/images/reddit-clone.png",
+			image: "/images/paper/1.png", // Keep for backward compatibility
+			images: generateProjectImages("paper", 1, "Paper", [
+				"Main application interface showcasing the core functionality",
+				"Community browsing and post interaction features",
+				"User profile and authentication system",
+			]),
 		},
 
 		{
@@ -82,7 +100,12 @@ function Projects() {
 			link_name: `Source Code`,
 			old_tech: ["Tailwind CSS", "React Hooks", "React Icons", "Github", "Vercel", "Animations", "Visual Effects"],
 			new_tech: ["Next.js", "React", "Javascript", "HTML", "CSS"],
-			image: "/images/portfolio-1.png",
+			image: "/images/portfolio/1.png", // Keep for backward compatibility
+			images: generateProjectImages("portfolio", 1, "Portfolio", [
+				"Main portfolio homepage with clean, minimalist design",
+				"Projects showcase with interactive modals and animations",
+				"Responsive mobile design with smooth animations",
+			]),
 		},
 
 		{
@@ -100,7 +123,12 @@ function Projects() {
 			link_name4: `Chrome Web Store`,
 			old_tech: ["Tailwind CSS", "React Hooks", "React Icons", "Github", "Google Chrome Dev Tools", "Script Injection"],
 			new_tech: ["React", "Javascript", "HTML", "CSS", "Vite"],
-			image: "/images/playback-control.png",
+			image: "/images/playback-control/1.png", // Keep for backward compatibility
+			images: generateProjectImages("playback-control", 1, "Playback Control", [
+				"Reddit video speed control extension interface",
+				"YouTube video speed control extension interface",
+				"Extension settings and customization options",
+			]),
 		},
 
 		{
@@ -132,7 +160,13 @@ function Projects() {
 				"Vite",
 			],
 			new_tech: ["MongoDB", "Express.js", "React", "Node.js", "Javascript", "HTML", "CSS"],
-			image: "/images/focus.png",
+			image: "/images/focus/1.png", // Keep for backward compatibility
+			images: generateProjectImages("focus", 1, "Focus", [
+				"Main e-commerce homepage with product showcase",
+				"Product detail page with reviews and ratings",
+				"Shopping cart and checkout interface",
+				"Administrator interface for product management",
+			]),
 		},
 		{
 			id: 8,
@@ -145,7 +179,12 @@ function Projects() {
 			link_name2: `Source Code`,
 			old_tech: [],
 			new_tech: ["Javascript", "HTML", "CSS", "Openrouter", "Vercel"],
-			image: "/images/yt-summary.png",
+			image: "/images/youtube-summarizer/1.png", // Keep for backward compatibility
+			images: generateProjectImages("youtube-summarizer", 1, "YouTube AI Summarizer", [
+				"Main extension interface with AI summary generation",
+				"Generated summary display with key points and timestamps",
+				"AI chat interface for asking questions about video content",
+			]),
 		},
 		{
 			id: 9,
@@ -156,7 +195,14 @@ function Projects() {
 			link_name2: `Source Code`,
 			old_tech: ["RN Vision Camera", "SSD Mobilenet V1", "Frame Processors", "RN Fast Tflite"],
 			new_tech: ["React Native", "Typescript", "Tensorflow", "Openrouter"],
-			image: "/images/objects.png",
+			image: "/images/objects/1.png", // Keep for backward compatibility
+			images: generateProjectImages("objects", 5, "Objects ML & AI", [
+				"Object detection of an apple. Adjust the confidence of the object identification, rotate the camera, or upload a photo.",
+				"Object detection of a banana",
+				"Object detection of a computer mouse",
+				"Take a photo to analyze all objects in the image",
+				"Display all objects in the image in addition to pricing and links for purchase",
+			]),
 		},
 		{
 			id: 10,
@@ -167,7 +213,18 @@ function Projects() {
 			link_name: `View in App Store (iOS)`,
 			old_tech: [],
 			new_tech: ["React Native", "Supabase", "RevenueCat", "Openrouter", "Typescript", "Expo"],
-			image: "/images/bill.png",
+			image: "/images/bill/1.png", // Keep for backward compatibility
+			images: generateProjectImages("bill", 9, "Bill", [
+				"Bill is a modern, beautiful app that allows the user to capture or upload photos to split bills with friends.",
+				"Take a photo to analyze with AI",
+				"Upload a photo of a bill or a screenshot to analyze with AI",
+				"Quickly calculate tips with a slider in addition to custom button values, or type in your own tip.",
+				"Edit item names, quantities and prices. Add any additional items to the bill.",
+				"Invite users to the bill via a QR code, or by sending them an in-app invitation by pressing the plus button next to their name.",
+				"Select your items in the bill, see what items your friends chose, and split items amongst your friends.",
+				"Send or request payments from friends via Venmo or Apple Pay via messages",
+				"Manage your friends, past bills, user settings, and customize the appearance of the app. Leave feedback for further improvements!",
+			]),
 		},
 	];
 
@@ -183,6 +240,21 @@ function Projects() {
 	function closeProjectModal() {
 		setIsModalOpen(false);
 		setSelectedProject(null);
+	}
+
+	function navigateToProject(direction) {
+		if (!selectedProject) return;
+
+		const currentIndex = projectArray.findIndex((p) => p.id === selectedProject.id);
+		let newIndex;
+
+		if (direction === "next") {
+			newIndex = (currentIndex + 1) % projectArray.length;
+		} else if (direction === "prev") {
+			newIndex = currentIndex === 0 ? projectArray.length - 1 : currentIndex - 1;
+		}
+
+		setSelectedProject(projectArray[newIndex]);
 	}
 
 	function ProjectItem({ project, index }) {
@@ -429,6 +501,7 @@ function Projects() {
 					project={selectedProject}
 					isOpen={isModalOpen}
 					onClose={closeProjectModal}
+					onNavigateProject={navigateToProject}
 				/>
 			)}
 		</div>
