@@ -169,16 +169,16 @@ function ProjectModal({ project, isOpen, onClose, onNavigateProject }) {
 
 	// Thumbnail loading handlers
 	const handleThumbnailLoad = (index) => {
-		setThumbnailLoading(prev => ({
+		setThumbnailLoading((prev) => ({
 			...prev,
-			[index]: false
+			[index]: false,
 		}));
 	};
 
 	const handleThumbnailError = (index) => {
-		setThumbnailLoading(prev => ({
+		setThumbnailLoading((prev) => ({
 			...prev,
-			[index]: false
+			[index]: false,
 		}));
 	};
 
@@ -258,9 +258,7 @@ function ProjectModal({ project, isOpen, onClose, onNavigateProject }) {
 
 	return (
 		<div
-			className={`fixed inset-0 z-50 flex items-center justify-center p-4 backdrop-blur-3xl transition-opacity duration-300 ${
-				isBackdropVisible ? "opacity-100" : "opacity-0"
-			}`}
+			className={`fixed inset-0 z-50 flex items-center justify-center p-4 transition-opacity duration-300 ${isBackdropVisible ? "opacity-100" : "opacity-0"}`}
 			style={{
 				top: "env(safe-area-inset-top)",
 				bottom: "env(safe-area-inset-bottom)",
@@ -269,7 +267,7 @@ function ProjectModal({ project, isOpen, onClose, onNavigateProject }) {
 			}}
 			onClick={handleClose}>
 			<div
-				className={`relative w-full max-h-[90vh] modal-glass-bg rounded-2xl overflow-hidden transition-all duration-500 transform ${
+				className={`relative w-full max-h-[90vh] bg-slate-800 rounded-2xl overflow-hidden transition-all duration-500 transform ${
 					isCarouselExpanded ? "max-w-full h-full" : "max-w-6xl"
 				} ${isModalVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}
 				onClick={(e) => e.stopPropagation()}>
