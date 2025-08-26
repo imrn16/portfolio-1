@@ -143,9 +143,7 @@ function Projects() {
 			link2: "https://github.com/imrn16/youtube-summarizer-extension",
 			link_name: `Chrome Web Store`,
 			link_name2: `Source Code`,
-			old_tech: [
-
-			],
+			old_tech: [],
 			new_tech: ["Javascript", "HTML", "CSS", "Openrouter", "Vercel"],
 			image: "/images/yt-summary.png",
 		},
@@ -156,12 +154,7 @@ function Projects() {
 				"Real-time object detection and classification using SSD Mobilenet and Gemini's image AI. The model is trained on a custom dataset for around 80 common objects, and then used to detect and classify objects in real-time. Take a photo to determine all objects in the scene, provide general pricing as well as relevant links to purchase!",
 			link2: "https://github.com/imrn16/objects-ai",
 			link_name2: `Source Code`,
-			old_tech: [
-				"RN Vision Camera",
-				"SSD Mobilenet V1",
-				"Frame Processors",
-				"RN Fast Tflite"
-			],
+			old_tech: ["RN Vision Camera", "SSD Mobilenet V1", "Frame Processors", "RN Fast Tflite"],
 			new_tech: ["React Native", "Typescript", "Tensorflow", "Openrouter"],
 			image: "/images/objects.png",
 		},
@@ -170,10 +163,9 @@ function Projects() {
 			title: "bill",
 			description:
 				"A high-end bill-splitting and tip calculator app, featuring a clean, modern design and a user-friendly interface. Powered by AI to scan and analyze images of bills in order to split bills with friends, send payments or request payments!",
-			link: "https://testflight.apple.com/join/zuAZC1qV",
-			link_name: `Join the Testflight Beta (iOS)`,
-			old_tech: [
-			],
+			link: "https://apps.apple.com/us/app/bill/id6747779525",
+			link_name: `View in App Store (iOS)`,
+			old_tech: [],
 			new_tech: ["React Native", "Supabase", "RevenueCat", "Openrouter", "Typescript", "Expo"],
 			image: "/images/bill.png",
 		},
@@ -217,6 +209,9 @@ function Projects() {
 									alt={project.title}
 									width={"100"}
 									height={"100"}
+									loading="lazy"
+									placeholder="blur"
+									blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
 								/>
 							</div>
 						</div>

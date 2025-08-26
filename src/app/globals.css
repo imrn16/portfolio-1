@@ -668,31 +668,3 @@ body {
 .scrollbar-hide::-webkit-scrollbar {
 	display: none; /* Safari and Chrome */
 }
-
-/* Mobile font weight adjustments */
-@media (max-width: 1050px) {
-	.font-thin {
-		font-weight: 200 !important; /* 100 + 100 */
-	}
-	.font-light {
-		font-weight: 300 !important; /* 200 + 100 */
-	}
-	.font-normal {
-		font-weight: 500 !important; /* 400 + 100 */
-	}
-	.font-medium {
-		font-weight: 600 !important; /* 500 + 100 */
-	}
-	.font-semibold {
-		font-weight: 700 !important; /* 600 + 100 */
-	}
-	.font-bold {
-		font-weight: 800 !important; /* 700 + 100 */
-	}
-	.font-extrabold {
-		font-weight: 900 !important; /* 800 + 100 */
-	}
-	.font-black {
-		font-weight: 900 !important; /* 900 + 100 (max weight) */
-	}
-}
