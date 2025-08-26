@@ -22,7 +22,7 @@ const MobileHeader = ({ isVisible, onNavigate }) => {
 
 	return (
 		<div
-			className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out backdrop-blur-md bg-slate-900/80 border-b border-slate-700/50 ${
+			className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out bg-blue-600 ${
 				isVisible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-full"
 			}`}
 			style={{
