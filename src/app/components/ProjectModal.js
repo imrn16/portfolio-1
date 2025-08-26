@@ -229,6 +229,12 @@ function ProjectModal({ project, isOpen, onClose, onNavigateProject }) {
 			className={`fixed inset-0 z-50 flex items-center justify-center p-4 backdrop-blur-3xl transition-opacity duration-300 ${
 				isBackdropVisible ? "opacity-100" : "opacity-0"
 			}`}
+			style={{
+				top: "env(safe-area-inset-top)",
+				bottom: "env(safe-area-inset-bottom)",
+				left: "env(safe-area-inset-left)",
+				right: "env(safe-area-inset-right)",
+			}}
 			onClick={handleClose}>
 			<div
 				className={`relative w-full max-h-[90vh] modal-glass-bg rounded-2xl overflow-hidden transition-all duration-500 transform ${

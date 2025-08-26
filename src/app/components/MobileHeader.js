@@ -24,7 +24,12 @@ const MobileHeader = ({ isVisible, onNavigate }) => {
 		<div
 			className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out ${
 				isVisible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-full"
-			}`}>
+			}`}
+			style={{
+				paddingTop: "env(safe-area-inset-top)",
+				paddingLeft: "env(safe-area-inset-left)",
+				paddingRight: "env(safe-area-inset-right)",
+			}}>
 			<div className={`backdrop-blur-md bg-slate-900/80 border-b border-slate-700/50 transition-all duration-300 ease-in-out ${isExpanded ? "h-28" : "h-16"}`}>
 				<div className="flex items-center justify-between px-6 h-16">
 					<div className="flex items-center">
@@ -34,7 +39,11 @@ const MobileHeader = ({ isVisible, onNavigate }) => {
 					<button
 						onClick={handleHamburgerClick}
 						className="flex flex-col justify-center items-center w-8 h-8 space-y-1">
-						<span className={`block w-6 h-0.5 bg-white shadow-sm transition-all duration-300 ${isExpanded ? "rotate-45 translate-y-1.5" : ""}`} />
+						<span
+							className={`block w-6 h-0.5 bg-white shadow-sm transition-all duration-300 ${
+								isExpanded ? "rotate-45 translate-y-1.5" : ""
+							}`}
+						/>
 						<span className={`block w-6 h-0.5 bg-white shadow-sm transition-all duration-300 ${isExpanded ? "opacity-0" : ""}`} />
 						<span
 							className={`block w-6 h-0.5 bg-white shadow-sm transition-all duration-300 ${
