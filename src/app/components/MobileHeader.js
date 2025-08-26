@@ -22,7 +22,7 @@ const MobileHeader = ({ isVisible, onNavigate }) => {
 
 	return (
 		<div
-			className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out ${
+			className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out backdrop-blur-md bg-slate-900/80 border-b border-slate-700/50 ${
 				isVisible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-full"
 			}`}
 			style={{
@@ -30,7 +30,7 @@ const MobileHeader = ({ isVisible, onNavigate }) => {
 				paddingLeft: "env(safe-area-inset-left)",
 				paddingRight: "env(safe-area-inset-right)",
 			}}>
-			<div className={`backdrop-blur-md bg-slate-900/80 border-b border-slate-700/50 transition-all duration-300 ease-in-out ${isExpanded ? "h-28" : "h-16"}`}>
+			<div className={`transition-all duration-300 ease-in-out ${isExpanded ? "h-28" : "h-16"}`}>
 				<div className="flex items-center justify-between px-6 h-16">
 					<div className="flex items-center">
 						<h1 className="text-xl font-bold text-white">Imran Mohiuddin</h1>

@@ -20,6 +20,7 @@ function ProjectModal({ project, isOpen, onClose, onNavigateProject }) {
 
 	// Image loading state
 	const [imageLoading, setImageLoading] = useState(true);
+	const [thumbnailLoading, setThumbnailLoading] = useState({});
 
 	// Handle fade-in and fade-out animations
 	useEffect(() => {
@@ -166,6 +167,30 @@ function ProjectModal({ project, isOpen, onClose, onNavigateProject }) {
 		setImageLoading(false);
 	};
 
+	// Thumbnail loading handlers
+	const handleThumbnailLoad = (index) => {
+		setThumbnailLoading(prev => ({
+			...prev,
+			[index]: false
+		}));
+	};
+
+	const handleThumbnailError = (index) => {
+		setThumbnailLoading(prev => ({
+			...prev,
+			[index]: false
+		}));
+	};
+
+	// Initialize thumbnail loading state when project changes
+	useEffect(() => {
+		const initialLoadingState = {};
+		projectImages.forEach((_, index) => {
+			initialLoadingState[index] = true;
+		});
+		setThumbnailLoading(initialLoadingState);
+	}, [project.id]);
+
 	// Reset loading state when image changes
 	useEffect(() => {
 		setImageLoading(true);
@@ -179,8 +204,15 @@ function ProjectModal({ project, isOpen, onClose, onNavigateProject }) {
 
 	// Loading spinner component
 	const LoadingSpinner = () => (
-		<div className="absolute inset-0 flex items-center justify-center bg-slate-800/50 rounded-lg">
+		<div className="absolute inset-0 flex items-center justify-center rounded-lg">
 			<div className="animate-spin rounded-full h-12 w-12 border-b-2 border-teal-400"></div>
+		</div>
+	);
+
+	// Small loading spinner for thumbnails
+	const ThumbnailLoadingSpinner = () => (
+		<div className="absolute inset-0 flex items-center justify-center rounded-lg">
+			<div className="animate-spin rounded-full h-6 w-6 border-b-2 border-teal-400"></div>
 		</div>
 	);
 
