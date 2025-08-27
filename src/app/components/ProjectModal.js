@@ -34,6 +34,7 @@ function ProjectModal({ project, isOpen, onClose, onNavigateProject }) {
 			}, 100);
 			// Prevent background scrolling
 			document.body.style.overflow = "hidden";
+			document.documentElement.style.overflow = "hidden";
 		} else if (isClosing) {
 			// Start fade-out sequence
 			setIsModalVisible(false);
@@ -44,6 +45,7 @@ function ProjectModal({ project, isOpen, onClose, onNavigateProject }) {
 		} else {
 			// Re-enable background scrolling when modal is closed
 			document.body.style.overflow = "unset";
+			document.documentElement.style.overflow = "unset";
 		}
 	}, [isOpen, isClosing]);
 
@@ -51,6 +53,7 @@ function ProjectModal({ project, isOpen, onClose, onNavigateProject }) {
 	useEffect(() => {
 		return () => {
 			document.body.style.overflow = "unset";
+			document.documentElement.style.overflow = "unset";
 		};
 	}, []);
 
